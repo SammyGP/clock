@@ -1,8 +1,31 @@
 .clock {
-	margin-top:30vh;
-	margin:auto;
+	margin:100px;
+	margin-left:auto;
+	margin-right:auto;
 	width:200px;
 	height:200px;
-	border:5px solid black;
+	border:10px solid black;
 	border-radius:100%;
+	position:relative;
+}
+.hand {
+	width:50%;
+	background-color:black;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	top:50%;
+	transform-origin:100%; /* sets the origin of the roation/pivot to the right side instead of middle */
+	transform:rotate(90deg);
+	transition:all 0.05s;
+	transition-timing-function:cubic-bezier(0, 2.65, 0.58, 1); /* gives that tick ease feeling */
+}
+.minute {
+	height:5px;
+}
+.hour {
+	height:6px;
+}
+.second {
+	height:2px;
 }
