@@ -22,10 +22,13 @@
 }
 .minute {
 	height:5px;
+
 }
 .hour {
 	height:6px;
 }
 .second {
 	height:2px;
+	background-color:white;
+	border:1px solid black;
 }
