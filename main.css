@@ -2,9 +2,8 @@
 	margin:100px;
 	margin-left:auto;
 	margin-right:auto;
-	width:200px;
-	height:200px;
-	border:10px solid black;
+	width:500px;
+	height:500px;
 	border-radius:100%;
 	position:relative;
 }
@@ -21,14 +20,27 @@
 	transition-timing-function:cubic-bezier(0, 2.65, 0.58, 1); /* gives that tick ease feeling */
 }
 .minute {
-	height:5px;
-
+	height:9px;
+	border:4px solid black;
 }
 .hour {
-	height:6px;
+	height:7px;
+	border:2px solid black;
 }
 .second {
 	height:2px;
-	background-color:white;
 	border:1px solid black;
+}
+.dot {
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	background-color:black;
+	position:absolute;
+	top:51%;
+	left:48%;
+	z-index:100;
+	float:auto;
+	transform: translateX(-50%);/* sets center of origin to middle instead of corner */
+	transform: translateY(-50%);
 }
